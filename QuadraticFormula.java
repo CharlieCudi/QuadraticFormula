@@ -20,12 +20,22 @@ public class QuadraticFormula {
         double valueC = userInput.nextDouble();
 
             //Prints out value of 'c'
-        System.out.println(valueC);
+            System.out.println(valueC);
 
     double squareRt = (Math.sqrt((valueB)*(valueB) - 4*(valueA*valueC)));
 
         //Result of the square root portion
         System.out.println(squareRt);
+    
+    double negBPlus = (-(valueB) - squareRt);
+    double negAPlus = (-(valueB) + squareRt);
+
+    double answer1 = (negBPlus / 2*(valueA));
+    double answer2 = (negAPlus / 2*(valueA));
+
+    System.out.println("The answer is: " + "(" + (answer1) + "," + (answer2) + ")");
+    
+    
 
     }
     
