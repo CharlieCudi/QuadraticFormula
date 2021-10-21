@@ -5,23 +5,27 @@ public class QuadraticFormula {
         Scanner userInput = new Scanner (System.in);
         
         System.out.println("Please enter the value of b:");
-        String valueB = userInput.nextLine();
+        double valueB = userInput.nextDouble();
             
             //Prints out value of 'b'
             System.out.println(valueB);
         
         System.out.println("Please enter the value of 'a'");
-        String valueA = userInput.nextLine();
+        double valueA = userInput.nextDouble();
 
             //Prints out value of 'a'
             System.out.println(valueA);
 
         System.out.println("Please enter the value of 'c");
-        String valueC = userInput.nextLine();
+        double valueC = userInput.nextDouble();
 
             //Prints out value of 'c'
         System.out.println(valueC);
-        
+
+    double squareRt = (Math.sqrt((valueB)*(valueB) - 4*(valueA*valueC)));
+
+        //Result of the square root portion
+        System.out.println(squareRt);
 
     }
     
