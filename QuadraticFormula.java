@@ -7,13 +7,13 @@ public class QuadraticFormula {
         
 
             //userInput for variable 'b'
-        System.out.println("Please enter the value of b:");
-        double valueB = userInput.nextDouble();
+        System.out.println("Please enter the value of 'a':");
+        double valueA = userInput.nextDouble();
             
 
             //userInput for variable 'a'
-        System.out.println("Please enter the value of 'a'");
-        double valueA = userInput.nextDouble();
+        System.out.println("Please enter the value of 'b'");
+        double valueB = userInput.nextDouble();
 
 
             //userInput for variable 'c'
@@ -26,12 +26,15 @@ public class QuadraticFormula {
 
 
             //Second step, subract and add '-b' from the result of the square root
-    double negBPlus = (-(valueB) - squareRt);
-    double negAPlus = (-(valueB) + squareRt);
+    double negBMinus = (-1*(valueB) - squareRt);
+    double negBPlus = (-1*(valueB) + squareRt);
 
-            //Third step, divide the result with '2*a'
-    double answer1 = (negBPlus / 2*(valueA));
-    double answer2 = (negAPlus / 2*(valueA));
+            //Third step, solve for 2a
+    double divA = (2*(valueA));    
+    
+            //Last step, divide the result with 2a
+    double answer1 = (negBMinus / divA);
+    double answer2 = (negBPlus / divA);
 
 
             //Prints out the answer of the equation
